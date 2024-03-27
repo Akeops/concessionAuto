@@ -15,10 +15,10 @@ async function getVoitureById(req, res) {
     }
 }
 
-async function getAllHeroes(req, res) {
+async function getAllVoitures(req, res) {
     try {
         const { identity, alias } = req.query;
-        const heroes = await heroService.getAllHeroes({identity, alias});
+        const heroes = await heroService.getAllVoitures({identity, alias});
         res.json(heroes);
 
     } catch (err) {
